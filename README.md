@@ -1,2 +1,2 @@
-# tszlam.github.con
+# tszlam.github.com
 myResume
