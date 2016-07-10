@@ -156,3 +156,8 @@
 			background: -o-linear-gradient(left top, #393f4c 0%, #96514d 50%, #00a381 100%);
 			background: -ms-linear-gradient(left top, #393f4c 0%, #96514d 50%, #00a381 100%);
 		}
+		@media (max-width: 768px){
+			.workExp .date,.workExp .company,.workExp .position{
+				width: 90%;
+			}
+		}
