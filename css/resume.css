@@ -1,0 +1,158 @@
+		* {
+			text-align: center;
+		}
+		
+		html,
+		body,
+		#container,
+		#nav,
+		#contant {
+			height: 100%;
+		}
+		
+		#nav {
+			width: 8%;
+			/*height: 100%;*/
+			position: fixed;
+			background-color: #1f3134;
+		}
+		
+		#nav ul {
+			height: 100%;
+		}
+		
+		#nav li {
+			padding: 7% 0;
+			margin: 5%;
+			border: 2px solid #e7e7eb;
+			border-radius: 5px;
+			font-size: 1.2em;
+			font-weight: bold;
+			color: #e7e7eb;
+		}
+		
+		#nav li:hover {
+			cursor: pointer;
+		}
+		
+		#main {
+			width: 92%;
+			height: 100%;
+			margin-left: 8%;
+			/*overflow: hidden;*/
+		}
+		
+		#contant {
+			width: 100%;
+			/*height: auto;*/
+		}
+		
+		.page {
+			width: 100%;
+			display: none;
+			float: left;
+		}
+		
+		#intro {
+			/*background-color: #204D74;*/
+			height: 100%;
+			color: #fff;
+			/***********/
+		}
+		
+		#intro img {
+			width: 20%;
+			margin-top: 5%;
+		}
+		
+		#resume {
+			/*background-color: #3C763D;*/
+			/*height: 200px;*/
+			/*padding-top: 5%;*/
+			/***********/
+			font-size: 1.2em;
+		}
+		
+		.resume-box {
+			width: 80%;
+			margin: 0 auto;
+			margin-top: 40px;
+			border: 2px solid #E2E2E2;
+			border-radius: 5px;
+			color: #fff;
+		}
+		
+		.resume-box .title {
+			text-align: left;
+			font-size: 1.5em;
+			margin: 10px;
+			font-weight: bold;
+			border-bottom: 2px solid #E2E2E2;
+		}
+		
+		.resume-box .detail {
+			text-align: left;
+			margin-left: 10px;
+		}
+		
+		.resume-box .workExp {
+			margin: 10px;
+			border: 2px solid #E2E2E2;
+			padding: 5px;
+		}
+		
+		.workExp p {
+			margin: 0;
+		}
+		
+		.workExp .date {
+			display: inline-block;
+			width: 24%;
+			text-align: left;
+		}
+		
+		.workExp .company {
+			display: inline-block;
+			width: 37%;
+			text-align: left;
+			font-weight: bold;
+		}
+		
+		.workExp .position {
+			display: inline-block;
+			width: 36%;
+			text-align: left;
+			font-weight: bold;
+		}
+		
+		.workExp .detail {
+			border-top: 2px solid #E2E2E2;
+			margin-top: 5px;
+			padding: 5px;
+		}
+		
+		#demo {
+			background-color: #C7254E;
+			height: 500px;
+			/***********/
+		}
+		
+		#contact {
+			height: 100%;
+			padding-top: 20%;
+			color: #fff;
+			font-size: 1.5em;
+			/***********/
+		}
+		/*渐变背景色*/
+		
+		.page {
+			background-size: contain;
+			background-repeat: no-repeat;
+			background: linear-gradient(left top, #393f4c 0%, #96514d 50%, #00a381 100%);
+			background: -webkit-linear-gradient(left top, #393f4c 0%, #96514d 50%, #00a381 100%);
+			/*background: -webkit-gradient(linear,left top,right bottom,from(#393f4c),to(#00a381));*/
+			background: -moz-linear-gradient(left top, #393f4c 0%, #96514d 50%, #00a381 100%);
+			background: -o-linear-gradient(left top, #393f4c 0%, #96514d 50%, #00a381 100%);
+			background: -ms-linear-gradient(left top, #393f4c 0%, #96514d 50%, #00a381 100%);
+		}
