@@ -39,12 +39,10 @@ body,
 	width: 92%;
 	height: 100%;
 	margin-left: 8%;
-	/*overflow: hidden;*/
 }
 
 #contant {
 	width: 100%;
-	/*height: auto;*/
 }
 
 .page {
@@ -54,10 +52,8 @@ body,
 }
 
 #intro {
-	/*background-color: #204D74;*/
 	height: 100%;
 	color: #fff;
-	/***********/
 }
 
 #intro img {
@@ -66,10 +62,7 @@ body,
 }
 
 #resume {
-	/*background-color: #3C763D;*/
-	/*height: 200px;*/
-	/*padding-top: 5%;*/
-	/***********/
+	padding-bottom: 5%;
 	font-size: 1.2em;
 }
 
