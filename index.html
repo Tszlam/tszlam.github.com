@@ -1,234 +1,97 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 
-<head>
-    <title>李梓霖的个人页</title>
-    <meta charset="UTF-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- No Scaling / Optional / Make it more like native app / Normally not recommended -->
-    <!-- <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"> -->
-    <!-- Bootstrap -->
-    <link rel="stylesheet" href="css/neat-min.css">
-    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
-    <!---->
-    <style type="text/css">
-    	.blue{
-    		background-color: blue;
-    	}
-    	.yellow{
-    		background-color: yellow;
-    	}
-    	.red{
-    		background-color: red;
-    	}
-    	.green{
-    		background-color: green;
-    	}
-    	.show{
-    		display: block;
-    	}
-/*****************/
-		*{
-			text-align: center;
-		}
-		html,body,#container,#nav,#contant{
-			height: 100%;
-		}
-		#nav{
-			width: 8%;
-			/*height: 100%;*/
-			position: fixed;
-		}
-		#nav ul{
-			height: 100%;
-		}
-		#nav li{
-			padding: 5% 0;
-			margin: 2%;
-			border: 2px solid #122B40;
-			border-radius: 5px;
-			font-size: 1.2em;
-			font-weight: bold;
-		}
-		#main{
-			width: 92%;
-			/*height: 100%;*/
-			margin-left: 8%;
-			overflow: hidden;
-		}
-		#contant{
-			width: 400%;
-			/*height: auto;*/
-		}
-		.page{
-			width: 25%;
-			display: none;
-			float: left;
-		}
-		#intro{
-			/*background-color: #204D74;*/
-			height: 100%;
-			color: #fff;
-			/***********/
-		}
-		#intro img{
-			width: 20%;
-			margin-top: 5%;
-		}
-		#resume{
-			/*background-color: #3C763D;*/
-			/*height: 200px;*/
-			/*padding-top: 5%;*/
-			/***********/
-			font-size: 1.2em;
-		}
-		.resume-box{
-			width: 80%;
-			margin: 0 auto;
-			margin-top: 40px;
-			border: 2px solid #E2E2E2;
-			border-radius: 5px;
-			color: #fff;
-		}
-		.resume-box .title{
-			text-align: left;
-			font-size: 1.5em;
-			margin: 10px;
-			font-weight: bold;
-			border-bottom: 2px solid #E2E2E2;
-		}
-		.resume-box .detail{
-			text-align: left;
-			margin-left: 10px;
-		}
-		.resume-box .workExp{
-			margin: 10px;
-			border: 2px solid #E2E2E2;
-			padding: 5px;
-		}
-		.workExp p{
-			margin: 0;
-		}
-		.workExp .date{
-			display: inline-block;
-			width: 24%;
-			text-align: left;
-		}
-		.workExp .company{
-			display: inline-block;
-			width: 37%;
-			text-align: left;
-			font-weight: bold;
-		}
-		.workExp .position{
-			display: inline-block;
-			width: 36%;
-			text-align: left;
-			font-weight: bold;
-		}
-		.workExp .detail{
-			border-top: 2px solid #E2E2E2;
-			margin-top: 5px;
-			padding: 5px;
-		}
-		#demo{
-			background-color: #C7254E;
-			height: 500px;
-			/***********/
-		}
-		#contact{
-			background-color: #D58512;
-			height: 100px;
-			/***********/
-		}
-/*渐变背景色*/
-		.page{
-			background-size: contain;
-			background-repeat: no-repeat;
-			background: linear-gradient(left top,#393f4c 0%,#96514d 50%,#00a381 100%);
-			background: -webkit-linear-gradient(left top,#393f4c 0%,#96514d 50%,#00a381 100%);
-			/*background: -webkit-gradient(linear,left top,right bottom,from(#393f4c),to(#00a381));*/
-			background: -moz-linear-gradient(left top,#393f4c 0%,#96514d 50%,#00a381 100%);
-			background: -o-linear-gradient(left top,#393f4c 0%,#96514d 50%,#00a381 100%);
-			background: -ms-linear-gradient(left top,#393f4c 0%,#96514d 50%,#00a381 100%);
-		}
-    </style>
-</head>
+	<head>
+		<title>李梓霖的个人页</title>
+		<meta charset="UTF-8" />
+		<!--<meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+		<!-- No Scaling / Optional / Make it more like native app / Normally not recommended -->
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+		<!-- Bootstrap -->
+		<link rel="stylesheet" href="css/neat-min.css">
+		<link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+		<!---->
+		<link rel="stylesheet" type="text/css" href="css/resume.css" />
+	</head>
 
-<body>
-    <div id="container">
-    	<div id="nav" class="yellow">
-    		<ul>
-    			<li>自我介绍</li>
-    			<li>我的简历</li>
-    			<li>小Demo</li>
-    			<li>联系我</li>
-    		</ul>
-    	</div>
-    	<div id="main" class="clearfix">
-    		<div id="contant">
-    			<div class="page" id="intro">
-    				<img src="img/head.png"/>
-    				<h1>李梓霖</h1>
-    				<h2>Tszlam Lee</h2>
-    				<h3>91年金牛男</h3>
-    			</div>
-    			<div class="page show" id="resume">
-    				<div class="resume-box">
-    					<p class="title">求职岗位</p>
-    					<p class="detail">前端开发工程师</p>
-    				</div>
-    				<div class="resume-box">
-    					<p class="title">技能与能力</p>
-    					<p class="detail">-1年的管理经验，1年的前端经验<br />
-    					-熟练运用HTML，CSS，JavaScript进行开发<br />
-    					-熟悉Ajax，有HTML5，CSS3开发经验<br />
-    					-可以使用原生JavaScript实现交互效果，写接口<br />
-    					-可以手写静态页面<br />
-    					-对主流开发框架和库（JQuery，Bootstrap，AngularJS等）有使用经验<br />
-    					-对（PHP，Node.js，MongoDB，MySQL）有接触与了解</p>
-    				</div>
-    				<div class="resume-box">
-    					<p class="title">工作经验</p>
-    					<div class="workExp">
-    						<p class="date">2013.10 - 2014.06</p>
-    						<p class="company">北京和堂文化有限责任公司</p>
-    						<p class="position">总经理助理（实习）</p>
-    						<p class="detail">-安排总经理日程，协调各部门工作，保持公司日常的顺利运行</p>
-    					</div>
-    					<div class="workExp">
-    						<p class="date">2014.07 - 2016.07</p>
-    						<p class="company">深圳市创尔时装有限公司</p>
-    						<p class="position">IT部门</p>
-    						<p class="detail">-负责公司网站的前端工作，主要是静态页面的开发<br />
-    						-负责维护公司电脑和网络设备的正常使用</p>
-    					</div>
-    				</div>
-    				<div class="resume-box">
-    					<p class="title">教育信息</p>
-    					<div class="workExp">
-    						<p class="date">2010.09 - 2014.06</p>
-    						<p class="company">北京理工大学珠海学院</p>
-    						<p class="position">信息工程专业</p>
-    					</div>
-    				</div>
-    				<div class="resume-box">
-    					<p class="title">其他技能与证书</p>
-    					<p class="detail">-英语水平良好<br />
-    					-大学英语四级（CET-4）<br />
-    					-大学英语六级（CET-6）<br />
-    					-大学计算机四级 - 网络工程师<br />
-    					-熟练使用Word，Excel，Powerpoint等办公软件<br />
-    					-熟练使用Photoshop，CorelDRAW</p>
-    				</div>
-    			</div>
-    			<div class="page container-fluid" id="demo">page3</div>
-    			<div class="page" id="contact">page4</div>
-    		</div>
-    	</div>
-    </div>
-    <script src="js/jquery-2.1.0.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-</body>
+	<body>
+		<div id="container">
+			<div id="nav">
+				<ul>
+					<li>自我介绍</li>
+					<li>我的简历</li>
+					<!--<li>小Demo</li>-->
+					<li>联系我</li>
+				</ul>
+			</div>
+			<div id="main" class="clearfix">
+				<div id="contant">
+					<div class="page" id="intro">
+						<img src="img/head.png" />
+						<h1>李梓霖</h1>
+						<h2>Tszlam Lee</h2>
+						<h3>91年金牛男</h3>
+					</div>
+					<div class="page" id="resume">
+						<div class="resume-box">
+							<p class="title">求职岗位</p>
+							<p class="detail">前端开发工程师</p>
+						</div>
+						<div class="resume-box">
+							<p class="title">技能与能力</p>
+							<p class="detail">-1年的管理经验，1年的前端经验<br /> -熟练运用HTML，CSS，JavaScript进行开发
+								<br /> -熟悉Ajax，有HTML5，CSS3开发经验
+								<br /> -可以使用原生JavaScript实现交互效果，写接口
+								<br /> -可以手写静态页面
+								<br /> -对主流开发框架和库（JQuery，Bootstrap，AngularJS等）有使用经验
+								<br /> -对（PHP，Node.js，MongoDB，MySQL）有接触与了解
+							</p>
+						</div>
+						<div class="resume-box">
+							<p class="title">工作经验</p>
+							<div class="workExp">
+								<p class="date">2013.10 - 2014.06</p>
+								<p class="company">北京和堂文化有限责任公司</p>
+								<p class="position">总经理助理（实习）</p>
+								<p class="detail">-安排总经理日程，协调各部门工作，保持公司日常的顺利运行</p>
+							</div>
+							<div class="workExp">
+								<p class="date">2014.07 - 2016.07</p>
+								<p class="company">深圳市创尔时装有限公司</p>
+								<p class="position">IT部门</p>
+								<p class="detail">-负责公司网站的前端工作，主要是静态页面的开发<br /> -负责维护公司电脑和网络设备的正常使用
+								</p>
+							</div>
+						</div>
+						<div class="resume-box">
+							<p class="title">教育信息</p>
+							<div class="workExp">
+								<p class="date">2010.09 - 2014.06</p>
+								<p class="company">北京理工大学珠海学院</p>
+								<p class="position">信息工程本科</p>
+							</div>
+						</div>
+						<div class="resume-box">
+							<p class="title">其他技能与证书</p>
+							<p class="detail">-英语水平良好<br /> -大学英语四级（CET-4）
+								<br /> -大学英语六级（CET-6）
+								<br /> -大学计算机四级 - 网络工程师<br /> -熟练使用Word，Excel，Powerpoint等办公软件
+								<br /> -熟练使用Photoshop，CorelDRAW
+							</p>
+						</div>
+					</div>
+					<!--<div class="page container-fluid" id="demo">page3</div>-->
+					<div class="page" id="contact">
+						<p>手机：13592833907</p>
+						<p>邮箱：chyiqm@qq.com</p>
+						<p>Github:<a href="http://www.github.com/Tszlam">github.com/Tszlam</a></p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="js/jquery-2.1.0.js"></script>
+		<script src="js/resume.js"></script>
+		<!--<script src="js/bootstrap.min.js"></script>-->
+	</body>
 
 </html>
