@@ -54,7 +54,8 @@ body,
 #intro {
 	height: 100%;
 	color: #fff;
-	font-size:1.8em;
+	font-size:2em;
+	font-weight:bolder;
 }
 
 #intro img {
