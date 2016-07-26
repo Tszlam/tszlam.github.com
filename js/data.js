@@ -17,7 +17,7 @@ var infos ={
 		"-可以使用原生JavaScript实现交互效果 ",
 		"-对JS，jQuery的封装，模块化，插件化有经验 ",
 		"-可以手写静态页面 ",
-		"-对MVC,MMVC有一定的理解和实践",
+		"-对MVC,MVVC有一定的理解和实践",
 		"-对主流开发框架和库（JQuery，Bootstrap，Vue.js 等）有使用经验，可以灵活应用 ",
 		"-对（PHP，Node.js，MongoDB，MySQL）等后端技术有一定的接触和使用经验 ",
 		"-对自动化开发流程有接触"]
