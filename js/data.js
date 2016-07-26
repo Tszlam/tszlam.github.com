@@ -55,7 +55,7 @@ var infos ={
 			detail:["-英语水平良好",
 		"-大学英语四级（CET-4）",
 		"-大学英语六级（CET-6）",
-		"-大学计算机四级 - 网络工程师",
+		"-全国计算机等级考试四级 - 网络工程师",
 		"-熟练使用Word，Excel，Powerpoint等办公软件",
 		"-熟练使用Photoshop，CorelDRAW",
 		]
