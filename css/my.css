@@ -1,0 +1,170 @@
+html,body,#all,#container{
+	/*height: 100%;*/
+	width: 100%;
+}
+html{
+	height: 100%;
+	background-color: #DCE775;
+}
+#head,#foot{
+	position: fixed;
+	background-color: #f44336;
+	color: #323232;
+}
+
+
+
+
+/**/
+/*head*/
+/**/
+#head{
+	width: 100%;
+	top: 0;
+	
+	/*test*/
+	/*height: 80px;*/
+	
+}
+#head nav{
+	width: 100%;
+}
+#head ul{
+	margin: 0 auto;
+}
+#head li{
+	box-sizing: border-box;
+	padding: 5px 30px;
+	width: 250px;
+	border: 5px solid #f44336;
+	line-height: 50px;
+	font-size: 30px;
+	vertical-align: middle;
+	text-align: center;
+	float: left;
+}
+#head li:hover{
+	background-color: #ef5350;
+	border-color: #ef5350;
+	cursor: pointer;
+	font-size: 35px;
+	color: #212121;
+}
+
+
+
+
+/**/
+/*foot*/
+/**/
+#foot{
+	padding: 0 20px;
+	bottom: 0;
+	right:0;
+	/*test*/
+	/*width: 100px;*/
+	/*height: 80px;*/
+	/*background-color: brown;*/
+}
+
+
+
+/**/
+/*main*/
+/**/
+#container{
+	box-sizing: border-box;
+	padding: 40px 100px;
+	
+	/*test*/
+	
+}
+#container *{
+	box-sizing: border-box;
+}
+.pages{
+	width: 100%;
+	padding: 40px 0 10px 0;
+	/*test*/
+	/*height: 500px;*/
+	/*background-color: #CCCCCC;*/
+}
+
+
+/**/
+/*intro*/
+/**/
+#intro{
+	text-align: center;
+}
+#intro img{
+	display: block;
+	width: 350px;
+	margin: 0 auto;
+}
+
+
+/**/
+/*cv*/
+/**/
+#cv{}
+#cv .col{
+	width: 50%;
+	padding: 15px;
+	float: left;
+}
+.cvbox{
+	width: 100%;
+	padding: 10px;
+	border: 3px solid #263238;
+	margin-bottom: 20px;
+}
+#cv .title{
+	display: block;
+	border-bottom: 3px solid #263238;
+}
+#cv .exp{
+	width: 100%;
+	border: 3px solid #263238;
+	padding: 10px;
+	margin-top: 10px;
+}
+.exp *{
+	display: block;
+}
+.exp .time{
+	width: 30%;
+	float: left;
+} 
+.exp .company{
+	width: 100%;
+	border-bottom: 3px solid #263238;
+} 
+.exp .position{
+	width: 30%;
+	float: right;
+}
+.exp .detail{}  
+
+
+
+/**/
+/*contact*/
+/**/
+#contact{
+	padding-top: 200px;
+	text-align: center;
+}
+
+
+
+
+
+/*clearfix*/
+.clearfix:before,.clearfix:after{
+	display: table;
+	content: " ";
+}
+.clearfix:after{
+	clear: both;
+}

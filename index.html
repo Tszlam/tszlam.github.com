@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html data-page=1>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+		<title>李梓霖</title>
+		<!--CSS-->
+		<link rel="stylesheet" type="text/css" href="css/neat-min.css"/>
+		<link rel="stylesheet" type="text/css" href="css/my.css"/>
+		<!--JS-->
+		<script src="js/vue.js"></script>
+		<script src="js/data.js"></script>
+		<script src="js/mvc.js"></script>
+	</head>
+	<body>
+		<div id="all">
+			<header id="head">
+				<nav>
+					<ul class="clearfix">
+						<li v-for="n in nav.length" data-page="{{n}}" v-on:click="changePage">{{nav[n]}}</li>
+					</ul>
+				</nav>
+			</header>
+			<div id="container">
+	<!--Intro Page-->
+				<section class="pages" id="intro" v-if="show(0)">
+					<img src="img/head.png" alt="" />
+					<h1>{{info.intro.name.cn}}</h1>
+					<h1>{{info.intro.name.en}}</h1>
+					<h1>{{info.intro.sex}}</h1>
+					<h1>{{info.intro.bdate}}</h1>
+				</section>
+	<!--CV Page-->
+				<section class="pages clearfix" id="cv" v-if="show(1)">
+					<div class="col">
+						<div class="cvbox">
+							<h3 class="title">{{info.cv.objective.title}}</h3>
+							<p>{{info.cv.objective.detail}}</p>
+						</div>
+						<div class="cvbox">
+							<h3 class="title">{{info.cv.skill.title}}</h3>
+							<p v-for="i in info.cv.skill.detail">{{i}}</p>
+						</div>
+						<div class="cvbox">
+							<h3 class="title">{{info.cv.intro.title}}</h3>
+							<p v-for="i in info.cv.intro.detail">{{i}}</p>
+						</div>
+					</div>
+					<div class="col">
+						<div class="cvbox">
+							<h3 class="title">{{info.cv.exp.title}}</h3>
+							<div class="exp" v-for="i in info.cv.exp.detail">
+								<p class="time">{{i.time}}</p>
+								<p class="position">{{i.position}}</p>
+								<p class="company">{{i.company}}</p>
+								<p v-for="jd in i.jd">{{jd}}</p>
+							</div>
+						</div>
+						<div class="cvbox">
+							<h3 class="title">{{info.cv.edu.title}}</h3>
+							<div class="exp" v-for="i in info.cv.edu.detail">
+								<p class="time">{{i.time}}</p>
+								<p class="position">{{i.major}}</p>
+								<p class="company">{{i.school}}</p>
+								<p v-for="ps in i.ps">{{ps}}</p>
+							</div>
+						</div>
+						<div class="cvbox">
+							<h3 class="title">{{info.cv.other.title}}</h3>
+							<p v-for="i in info.cv.other.detail">{{i}}</p>
+						</div>
+					</div>
+				</section>
+	<!--Contact Page-->
+				<section class="pages" id="contact" v-if="show(2)">
+					<h1 v-for="i in info.contact">{{i.by}} : {{i.detail}}</h1>
+				</section>
+			</div>
+			<footer id="foot">
+				<h3>Using Vue.js by Tszlam , Github : <a href="http://www.github.com/Tszlam">Tszlam</a></h3>
+			</footer>
+		</div>
+	</body>
+	<script type="text/javascript">
+
+	</script>
+</html>
