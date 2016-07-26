@@ -66,7 +66,7 @@ var infos ={
 		detail:"396480947"
 	},
 	{
-		by:"手机",
+		by:"邮箱",
 		detail:"chyiqm@qq.com"
 	}
 	]
